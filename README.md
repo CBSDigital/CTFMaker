@@ -13,7 +13,7 @@ This framework was created to aid in creating LUTs for compositors to use. Inste
 
 ## Creating a new CTF LUT
 
-To create a new LUT, you will subclass the ```LUT``` base class, the base class for all CTF LUTs. The base class provides core functionality, such as writing the LUT out to a file. At a minimum, your CTF LUT should implement the factory methods ```getCTFName()``` and ```getOperators()```. Operators are discussed below.
+To create a new LUT, you will subclass the ```CTF``` base class, the base class for all CTF LUTs. The base class provides core functionality, such as writing the LUT out to a file. At a minimum, your CTF LUT should implement the factory methods ```getCTFName()``` and ```getOperators()```. Operators are discussed below.
 
 ## Operators
 
