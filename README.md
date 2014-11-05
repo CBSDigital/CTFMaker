@@ -3,6 +3,10 @@ CTFMaker
 
 A small MATLAB framework to create Autodesk formatted CTF LUTs by specifying chains of operators. Written by Benjamin Doherty.
 
+## Class Diagram
+
+A class diagram, ```Class digram.pdf``` is provided at the root of this repository. It shows the relationship between classes and how factory and template methods are used by subclasses to extend functionality.
+
 ## Purpose
 
 This framework was created to aid in creating LUTs for compositors to use. Instead of manually entering data into a CTF file, we use the tool to generate CTF LUTs based on a series of operators. The framework relies on subclassing to add additional functionality, such as new operators or LUT types.
