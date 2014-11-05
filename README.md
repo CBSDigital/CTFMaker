@@ -15,6 +15,8 @@ This framework was created to aid in creating LUTs for compositors to use. Inste
 
 To create a new LUT, you will subclass the ```CTF``` base class, the base class for all CTF LUTs. The base class provides core functionality, such as writing the LUT out to a file. At a minimum, your CTF LUT should implement the factory methods ```getCTFName()``` and ```getOperators()```. Operators are discussed below.
 
+For convenience, a ```CTF``` template is provided in Source/Templates.
+
 ## Operators
 
 An operator is a single operation performed on an image. CBS Digital only needed ```LUT1D``` and ```Matrix``` (color matrix) operators, but the full suite of Autodesk operators could be easily implemented.
@@ -22,3 +24,5 @@ An operator is a single operation performed on an image. CBS Digital only needed
 ## LUT1DHalfDomain
 
 Because of the intricacies of specifying a 1D LUT with half floating point domain, a convenience class, ```LUT1DHalfDomain``` is utilized. Subclassers of ```LUT1DHalfDomain``` need only concern themselves will implementing ```getLUTValueForFloat()```. This is where the mathematical operations are specified for the operator.
+
+A ```LUT1DHalfDomain``` template is provided in Source/Templates.
